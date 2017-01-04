@@ -17,7 +17,11 @@ def subarray(array):
     if maxiumum - minimum == contiguous_subarray_length - 1:
         return contiguous_subarray_length
 
-    return subarray(array[:-1])
+    largest_subarray_from_start = subarray(array[:-1])
+    largest_subarray_from_end = subarray(array[1:])
+    if largest_subarray_from_start > largest_subarray_from_end:
+        return largest_subarray_from_start
+    return largest_subarray_from_end
 
 if __name__ == "__main__":
     class TestSubarray(unittest.TestCase):
