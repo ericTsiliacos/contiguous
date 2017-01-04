@@ -5,6 +5,8 @@ import unittest
 def subarray(array):
     if len(array) < 2:
         return 0
+    if array[0] + 1 != array[1] and array[0] - 1 != array[1]:
+        return 0
     return 2
 
 
