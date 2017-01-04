@@ -23,4 +23,7 @@ if __name__ == "__main__":
         def test_2_reverse_ordered(self):
             self.assertEqual(subarray([2, 1]), 2)
 
+        def test_2_discontiguous(self):
+            self.assertEqual(subarray([1, 3]), 0)
+
     unittest.main()
