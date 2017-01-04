@@ -11,6 +11,6 @@ if __name__ == "__main__":
             self.assertEqual(subarray([]), 0)
 
         def test_single_item_array(self):
-            self.assertEqual(subarray([1]), 0)
+            self.assertEqual(subarray([1]), 1)
 
     unittest.main()
