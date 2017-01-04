@@ -16,4 +16,7 @@ if __name__ == "__main__":
         def test_single_item_array(self):
             self.assertEqual(subarray([1]), 1)
 
+        def test_2_contiguous(self):
+            self.assertEqual(subarray([1, 2]), 2)
+
     unittest.main()
