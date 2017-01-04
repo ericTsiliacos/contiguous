@@ -3,9 +3,10 @@
 import unittest
 
 def subarray(array):
+    contiguous_subarray_length = 0
     if array != []:
-        return 1
-    return 0
+        return contiguous_subarray_length + 1
+    return contiguous_subarray_length
 
 if __name__ == "__main__":
     class TestSubarray(unittest.TestCase):
