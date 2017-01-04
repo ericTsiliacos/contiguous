@@ -20,4 +20,7 @@ if __name__ == "__main__":
         def test_2_ordered(self):
             self.assertEqual(subarray([1, 2]), 2)
 
+        def test_2_reverse_ordered(self):
+            self.assertEqual(subarray([2, 1]), 2)
+
     unittest.main()
