@@ -19,4 +19,7 @@ if __name__ == "__main__":
         def test_2_contiguous(self):
             self.assertEqual(subarray([1, 2]), 2)
 
+        def test_2_discontiguous(self):
+            self.assertEqual(subarray([1, 3]), 1)
+
     unittest.main()
